@@ -1,12 +1,12 @@
 export default function Photos(props) {
     return (
-        <>
-            {props.users.map(user =>
-                <div>
+        <ul>
+            {props.users.map((user) =>
+                <li key={user.id}>
                     {user.username}
-                </div>
+                </li>
             )}
-        </>
+        </ul>
     )
 }
 

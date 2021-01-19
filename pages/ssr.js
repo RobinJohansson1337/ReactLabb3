@@ -1,12 +1,12 @@
-export default function About(props) {
+export default function Ssr(props) {
     return (
-        <>
-            {props.photos.map(photo =>
-                <div>
+        <ul>
+            {props.photos.map((photo) =>
+                <li key={photo.id}>
                     {photo.title}
-                </div>
+                </li>
             )}
-        </>
+        </ul>
     )
 }
 
